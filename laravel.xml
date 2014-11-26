@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templateSet group="laravel">
+  <template name="r:g" value="Route::get($LINK$,$closur$);$END$" description="Laravel Router GET" toReformat="false" toShortenFQNames="true">
+    <variable name="LINK" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="closur" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="r:p" value="Route::post($LINK$,$closur$);$END$&#10;" description="Laravel Router POST" toReformat="false" toShortenFQNames="true">
+    <variable name="LINK" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="closur" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="bld-comm" value="&#10;{{--==-------- $COMMENT$ --------==--}}&#10;$END$" shortcut="TAB" description="Laravel Blade Comment" toReformat="false" toShortenFQNames="true">
+    <variable name="COMMENT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="haserror" value="@if($errors-&gt;first('$INPUT$')) has-error @endif $END$" shortcut="TAB" description="laravel Blade has error" toReformat="false" toShortenFQNames="true">
+    <variable name="INPUT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+      <option name="PHP" value="false" />
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="help-block" value="&lt;span class=&quot;help-block&quot;&gt;{{ $errors-&gt;first('$INPUT$') }}&lt;/span&gt;$END$" description="Laravel Help block bootstrp with blade errors" toReformat="false" toShortenFQNames="true">
+    <variable name="INPUT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="input:old" value="{{ Input::old('$VAR$') }}$END$" description="Laravel Input::old" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="v:m" value="View::make('$VIEW$')$WITH$;&#10;$END$" description="View:make" toReformat="false" toShortenFQNames="true">
+    <variable name="VIEW" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="WITH" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="comm" value="/*****************************************************&#10;* $COMENTENT$&#10;******************************************************/&#10;$END$" toReformat="false" toShortenFQNames="true">
+    <variable name="COMENTENT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+      <option name="PHP Comment" value="true" />
+    </context>
+  </template>
+  <template name="ttt" value="{{ t_title('$label$') }} $END$&#10;" description="t_title()" toReformat="false" toShortenFQNames="true">
+    <variable name="label" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="bfo" value="{{ BootForm::open()-&gt;action('$action$') }}&#10;$END$" description="BootForm::open()" toReformat="false" toShortenFQNames="true">
+    <variable name="action" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="bfc" value="{{ BootForm::close() }}&#10;$END$" description="BootForm::close()" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+      <option name="PHP" value="false" />
+    </context>
+  </template>
+  <template name="bc:g" value="{{ Config::get('$var$') }} $END$" description="Config::get()" toReformat="false" toShortenFQNames="true">
+    <variable name="var" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="c:g" value="Config::get('$var$') $END$" description="Config::get()" toReformat="false" toShortenFQNames="true">
+    <variable name="var" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+      <option name="PHP Comment" value="false" />
+    </context>
+  </template>
+</templateSet>
+

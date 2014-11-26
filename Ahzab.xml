@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templateSet group="Ahzab">
+  <template name="ready" value="$(document).ready(function(){&#10;    $stuff_to_do$&#10;});&#10;$END$" description="Jquery Document ready event" toReformat="false" toShortenFQNames="true">
+    <variable name="stuff_to_do" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+</templateSet>
+
